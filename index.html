@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>세계 호박 할로윈 축제 | 고마워토토</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green:#7a3b12; --green-d:#5c2c0d; --mango:#c9711c; --mango-d:#a85a12;
+    --cream:#fdf8ef; --ink:#3a3226; --sub:#7c7266; --line:#ece3d3;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Noto Sans KR',sans-serif;color:var(--ink);background:#e9e2d4;line-height:1.75;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:620px;margin:0 auto;background:var(--cream);overflow:hidden;box-shadow:0 0 60px rgba(0,0,0,.08)}
+  img{display:block;width:100%;height:auto}
+  .serif{font-family:'Gowun Batang',serif}
+
+  /* HERO */
+  .hero{position:relative;color:#fff;text-align:center}
+  .hero .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .hero .veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(60,30,10,.36) 0%,rgba(60,30,10,.15) 40%,rgba(70,35,10,.72) 100%)}
+  .hero .inner{position:relative;padding:70px 26px 52px}
+  .hero .badge{display:inline-block;font-size:12px;letter-spacing:3px;font-weight:500;background:rgba(255,255,255,.22);padding:7px 16px;border-radius:20px;margin-bottom:20px;backdrop-filter:blur(2px)}
+  .hero .emoji{font-size:52px;line-height:1;margin-bottom:12px;filter:drop-shadow(0 4px 12px rgba(0,0,0,.4))}
+  .hero h1{font-size:36px;font-weight:700;letter-spacing:-.5px;margin-bottom:14px;text-shadow:0 3px 16px rgba(0,0,0,.45)}
+  .hero .lead{font-size:16px;font-weight:300;max-width:420px;margin:0 auto;text-shadow:0 2px 10px rgba(0,0,0,.5)}
+  .hero .lead b{font-weight:700}
+
+  .sec{padding:52px 28px}
+  .kicker{display:block;text-align:center;color:var(--mango-d);font-weight:700;font-size:13px;letter-spacing:2px;margin-bottom:12px}
+  .story h2{font-family:'Gowun Batang',serif;text-align:center;font-size:25px;font-weight:700;line-height:1.5;margin-bottom:26px}
+  .story p{font-size:16px;color:#4a4235;margin-bottom:18px}
+  .quote{font-family:'Gowun Batang',serif;font-size:19px;color:var(--green-d);text-align:center;padding:14px 0;font-weight:700}
+
+  .photo{margin:26px -28px;position:relative}
+  .photo img{width:100%}
+  .photo .cap{position:absolute;left:0;right:0;bottom:0;padding:26px 22px 14px;color:#fff;font-size:13px;
+    background:linear-gradient(transparent,rgba(0,0,0,.55));text-shadow:0 1px 4px rgba(0,0,0,.5)}
+  .rounded{margin-left:0;margin-right:0}
+
+  .heart{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px 24px;text-align:center;box-shadow:0 8px 30px rgba(120,100,50,.06);margin-top:8px}
+  .heart p{font-family:'Gowun Batang',serif;font-size:18px;color:var(--ink);margin:0;line-height:1.7}
+  .heart b{color:var(--mango-d)}
+
+  /* ACTIVITY */
+  .acts{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .acts h3{text-align:center;font-size:21px;font-weight:700;margin-bottom:8px}
+  .acts .sh{text-align:center;color:var(--sub);font-size:14px;margin-bottom:24px}
+  .step{display:flex;gap:15px;align-items:flex-start;padding:14px 0;border-bottom:1px dashed var(--line)}
+  .step:last-child{border-bottom:0}
+  .step .n{flex:0 0 34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--green),var(--mango));color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:14px}
+  .step .t b{display:block;font-size:16px;font-weight:700;margin-bottom:2px}
+  .step .t span{font-size:14px;color:var(--sub)}
+
+  /* COOK */
+  .cook{text-align:center}
+  .cook h3{font-size:21px;font-weight:700;margin-bottom:6px}
+  .cook .note{font-size:13px;color:var(--sub);margin-bottom:18px}
+  .tags{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:18px}
+  .tag{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;text-align:center;font-size:14px;flex:1 1 28%;min-width:150px}
+  .tag b{display:block;font-size:15px;color:var(--green-d);margin-bottom:3px}
+  .allergy-notice{background:#fff8e6;border:1px solid #f0d78c;border-radius:14px;padding:14px 18px;margin-top:18px;text-align:center;font-size:13.5px;color:#7a5a12;line-height:1.6}
+  .allergy-notice b{color:#a3720a}
+
+  /* CTA */
+  .cta{padding:56px 28px 40px;text-align:center;background:linear-gradient(160deg,#e0972f,#a85a12)}
+  .cta h3{color:#fff;font-size:23px;font-weight:700;margin-bottom:8px;text-shadow:0 2px 10px rgba(60,40,10,.2)}
+  .cta p{color:#fff;opacity:.95;font-size:15px;margin-bottom:26px}
+  .btn{display:inline-block;background:#fff;color:var(--mango-d);font-weight:700;font-size:17px;padding:17px 46px;border-radius:40px;text-decoration:none;box-shadow:0 10px 26px rgba(80,50,10,.25)}
+  .foot{background:var(--green-d);color:#f6e6d0;text-align:center;padding:26px;font-size:13px;letter-spacing:.5px}
+  .foot .logo{font-weight:700;font-size:16px;color:#fff;letter-spacing:2px;margin-bottom:4px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- HERO -->
+  <header class="hero">
+    <img class="bg" src="img/hero.jpg" alt="세계 호박 할로윈 축제">
+    <div class="veil"></div>
+    <div class="inner">
+      <span class="badge">할로윈 특별 체험 · 다회권 회원 전용</span>
+      <div class="emoji">🎃</div>
+      <h1>세계 호박 할로윈 축제</h1>
+      <p class="lead">토토숲에 세계 여러 나라의 호박들이 모두 모였어요.<br>다르게 생긴 호박을 직접 만지고 탐색하며,<br><b>호박 속에 숨은 꼬마 유령</b>도 찾아보는 시간.</p>
+    </div>
+  </header>
+
+  <!-- STORY -->
+  <section class="sec story">
+    <span class="kicker">가을 · 세계 호박을 만나는 하루</span>
+    <h2>다른 나라 호박은,<br>우리 동네 호박과 뭐가 다를까요?</h2>
+    <p>토토숲에 세계 여러 나라의 호박들이 모두 모였어요. 아이들은 크기와 색깔, 생김새가 제각각인 호박을 직접 만지고 탐색하며, 각자 다른 매력을 찾아냅니다.</p>
+
+    <div class="photo"><img src="img/act_smile.jpg" alt="호박 유령 태그를 들고 활짝 웃는 아이"><div class="cap">호박 속 꼬마 유령을 만나 활짝 웃는 순간</div></div>
+
+    <p>씨앗을 심어보고, 호박 속에 숨은 꼬마 유령을 찾아보는 과정에서 아이는 자연스럽게 다름을 관찰하고 받아들이는 법을 배웁니다.</p>
+    <div class="quote">"이 호박 속엔 어떤 유령이 숨어있을까?"</div>
+    <p>세계 곳곳에서 온 호박들이 저마다 다르게 생겼듯이—</p>
+
+    <div class="heart">
+      <p>서로 다른 모습도 특별하다는 걸—<br><b>오늘 우리 아이도 놀이 속에서<br>자연스럽게 배웁니다.</b></p>
+    </div>
+  </section>
+
+  <!-- ACTIVITY FLOW -->
+  <section class="sec acts">
+    <h3>🎃 흙방에서 펼쳐지는 장면</h3>
+    <div class="sh">흙 탐색부터 애호박 덮밥까지</div>
+    <div class="step"><div class="n">1</div><div class="t"><b>흙 탐색</b><span>흙방 가득한 흙을 손으로 헤집으며 탐험 시작</span></div></div>
+    <div class="step"><div class="n">2</div><div class="t"><b>세계 호박 탐색</b><span>크기·색깔·생김새가 다른 세계 각국 호박을 직접 만지고 관찰</span></div></div>
+    <div class="step"><div class="n">3</div><div class="t"><b>호박씨 심기</b><span>내 손으로 직접 씨앗을 심어보는 시간</span></div></div>
+    <div class="step"><div class="n">4</div><div class="t"><b>호박 유령 찾기</b><span>호박 속에 숨은 꼬마 유령을 찾는 놀이</span></div></div>
+    <div class="step"><div class="n">5</div><div class="t"><b>요리방: 애호박 덮밥</b><span>든든한 한 끼를 직접 완성</span></div></div>
+  </section>
+
+  <!-- COOK -->
+  <section class="sec cook">
+    <span class="kicker">요리방 · 진짜 만드는 시간</span>
+    <h3>내가 만든 애호박 덮밥, 든든한 한 끼</h3>
+    <div class="note">※ 유아들이 만든 요리는 개별 포장해 드려요</div>
+    <div class="tags">
+      <div class="tag"><b>애호박 덮밥</b>내 손으로 완성하는 든든한 한 끼</div>
+      <div class="tag"><b>개별 포장</b>내가 만든 요리를 그대로 담아가는 뿌듯함</div>
+    </div>
+    <div class="allergy-notice">⚠️ <b>알러지 유의</b> — 견과류(아몬드), 계란, 유제품(우유, 버터)</div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h3>세계 호박 할로윈 축제</h3>
+    <p>수업을 마칠 때마다 선물을 받을 수 있어요. 운이 좋으면 쿠폰도!</p>
+    <a class="btn" href="#" onclick="alert('예약 페이지 준비 중입니다. 곧 만나요!'); return false;">10/8 예약 오픈 예정 →</a>
+  </section>
+
+  <footer class="foot">
+    <div class="logo">THANKS TOTO</div>
+    부모의 좋은 추억이, 지금 아이의 추억이 됩니다
+  </footer>
+
+</div>
+</body>
+</html>
